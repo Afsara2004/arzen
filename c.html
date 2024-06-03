@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    <title>ARZEN</title>
+</head>
+
+<body>
+   <!--nav bar-->
+   <nav class="navbar">
+    <h1>ARZEN</h1>
+    <div class="navbar-links">
+       <p><a href="index.html">Home</a></p>
+       <p><a href="Collection.html">Collections</a></p>
+       <p><a href="C.html">Contact</a></p>
+    </div>
+
+    <div class="navbar-menu-toggle" onclick=showNav()>
+      <i class="fa-solid fa-bars"></i>
+    </div>
+ </nav>
+
+ <!--side nav bar-->
+ <div class="side-navbar">
+  <p style="text-align: right;" onclick=closeNav()><i class="fa-solid fa-xmark"></i></p><br><br>
+
+  <div class="side-navbar-links">
+      <p class="side-navbar-links"><a href="index.html">Home</a></p><br><br>
+      <p class="side-navbar-links"><a href="Collection.html">Collections</a></p><br><br>
+      <p class="side-navbar-links"><a href="C.html">Contact</a></p>
+   </div>
+
+ </div>
+    <!--contact-->
+    <center>
+    <div class="contact">
+        <form>
+            <div class="ins">
+            <h1 id="hed">Contact Us</h1>
+                <br>
+            <input type="text" placeholder="Name"><br>
+                <br>
+            <input type="text" placeholder="Email"><br>
+                 <br>
+            <input type="textarea" placeholder="Type something" id="rt"><br><br>
+            <button>Submit</button>
+            </div>
+        </form>
+    </div>
+    </center>
+
+    <style>
+        #rt{
+            padding: 50px;
+            width: 255px;
+        }
+        ::placeholder{
+            text-align: center;
+            font-size: medium;
+        }
+        
+        .contact{
+            
+            margin: 40px;
+            color: black;
+            margin: 30px;
+            width: 50%;
+           
+        }
+
+        .contact input{
+            padding: 20px;
+            width: 50%;
+            height: 10px;
+            border-radius: 15px;
+            border: 1px solid slateblue;
+            align: center;
+        }
+
+        .contact div{
+            padding: 10px;
+        }
+
+        button{
+            border-radius: 20px;
+            padding: 15px;
+            background-color: rgb(148, 148, 148);
+            color: black;
+            font-size: medium;
+        }
+        @media screen and (max-width:600px){
+            .contact{
+                padding-left:10px;
+                padding-right:80px;
+            }
+
+            #rt{
+               
+               padding-left: 30px;
+            }
+            .contact input{
+                  width: 300px;
+            }
+            #he{
+                margin:10%;
+            }
+
+        
+    </style>
+
+
+    <!--footer-->
+
+    <div class="foot">
+        <h2>ARZEN</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="ficon">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <p>@2024 ARZEN</p>
+    </div>
+    
+
+</body>
+
+</html>
